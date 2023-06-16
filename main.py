@@ -53,6 +53,8 @@ max_value = None
 min_season = None
 min_year = None
 min_value = None
+max_season_year=None
+min_season_year=None
 
 # Iterate over the columns and find the season with the maximum and minimum sums
 for column in season_columns:
@@ -61,18 +63,18 @@ for column in season_columns:
 
     if max_season is None or output_df.loc[max_index, column] > max_value:
         max_season = column
-        max_year = output_df.loc[max_index, 'Year']
+        max_season_year = output_df.loc[max_index, 'Year']
         max_value = output_df.loc[max_index, column]
 
     if min_season is None or output_df.loc[min_index, column] < min_value:
         min_season = column
-        min_year = output_df.loc[min_index, 'Year']
+        min_season_year = output_df.loc[min_index, 'Year']
         min_value = output_df.loc[min_index, column]
 
 
 # Find the year associated with the minimum and maximum sums
-min_year = output_df.loc[output_df[min_season] == min_value, 'Year'].values[0]
-max_year = output_df.loc[output_df[max_season] == max_value, 'Year'].values[0]
+min_year = output_df.loc[output_df['Yearly Sum'] == min_sum, 'Year'].values[0]
+max_year = output_df.loc[output_df['Yearly Sum'] == max_sum, 'Year'].values[0]
 
 
 # Find the column index for the highest and lowest month
@@ -147,15 +149,15 @@ else:
 
 # Print the season with the maximum sum
 print()
-print("Season with Maximum Sum:")
+print("Season with Maximum Precipation:")
 print("Season:", max_season)
-print("Year:", max_year)
+print("Year:", max_season_year)
 print("Value:", max_value)
 print()
 
 # Print the season with the minimum sum
-print("Season with Minimum Sum:")
+print("Season with Minimum Precipation:")
 print("Season:", min_season)
-print("Year:", min_year)
+print("Year:", min_season_year)
 print("Value:", min_value)
 
