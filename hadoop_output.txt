@@ -1,0 +1,82 @@
+hdoop@samer-Inspiron-5593:~/bigData/bigData$ ./runhadoop 
+2023-06-22 18:50:24,564 WARN streaming.StreamJob: -file option is deprecated, please use generic option -files instead.
+packageJobJar: [mapper.py, reducer.py, /tmp/hadoop-unjar7901763942817126938/] [] /tmp/streamjob4126645557928640265.jar tmpDir=null
+2023-06-22 18:50:25,182 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /127.0.0.1:8032
+2023-06-22 18:50:25,303 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /127.0.0.1:8032
+2023-06-22 18:50:25,473 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hdoop/.staging/job_1687448656345_0001
+2023-06-22 18:50:26,154 INFO mapred.FileInputFormat: Total input files to process : 1
+2023-06-22 18:50:26,193 INFO mapreduce.JobSubmitter: number of splits:2
+2023-06-22 18:50:26,280 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1687448656345_0001
+2023-06-22 18:50:26,281 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2023-06-22 18:50:26,399 INFO conf.Configuration: resource-types.xml not found
+2023-06-22 18:50:26,399 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2023-06-22 18:50:26,610 INFO impl.YarnClientImpl: Submitted application application_1687448656345_0001
+2023-06-22 18:50:26,649 INFO mapreduce.Job: The url to track the job: http://samer-Inspiron-5593:8088/proxy/application_1687448656345_0001/
+2023-06-22 18:50:26,650 INFO mapreduce.Job: Running job: job_1687448656345_0001
+2023-06-22 18:50:32,722 INFO mapreduce.Job: Job job_1687448656345_0001 running in uber mode : false
+2023-06-22 18:50:32,723 INFO mapreduce.Job:  map 0% reduce 0%
+2023-06-22 18:50:36,772 INFO mapreduce.Job:  map 100% reduce 0%
+2023-06-22 18:50:40,803 INFO mapreduce.Job:  map 100% reduce 100%
+2023-06-22 18:50:40,813 INFO mapreduce.Job: Job job_1687448656345_0001 completed successfully
+2023-06-22 18:50:40,878 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=21266
+		FILE: Number of bytes written=880953
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=8659
+		HDFS: Number of bytes written=5202
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4291
+		Total time spent by all reduces in occupied slots (ms)=1772
+		Total time spent by all map tasks (ms)=4291
+		Total time spent by all reduce tasks (ms)=1772
+		Total vcore-milliseconds taken by all map tasks=4291
+		Total vcore-milliseconds taken by all reduce tasks=1772
+		Total megabyte-milliseconds taken by all map tasks=4393984
+		Total megabyte-milliseconds taken by all reduce tasks=1814528
+	Map-Reduce Framework
+		Map input records=121
+		Map output records=1452
+		Map output bytes=18356
+		Map output materialized bytes=21272
+		Input split bytes=178
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=121
+		Reduce shuffle bytes=21272
+		Reduce input records=1452
+		Reduce output records=136
+		Spilled Records=2904
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=131
+		CPU time spent (ms)=1650
+		Physical memory (bytes) snapshot=877027328
+		Virtual memory (bytes) snapshot=7693221888
+		Total committed heap usage (bytes)=910163968
+		Peak Map Physical memory (bytes)=329248768
+		Peak Map Virtual memory (bytes)=2561773568
+		Peak Reduce Physical memory (bytes)=222408704
+		Peak Reduce Virtual memory (bytes)=2570194944
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=8481
+	File Output Format Counters 
+		Bytes Written=5202
+2023-06-22 18:50:40,878 INFO streaming.StreamJob: Output directory: /output/output

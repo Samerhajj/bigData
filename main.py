@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
+import time
 
+start=time.time()
 
 # Check if the Excel file path is provided as a command-line argument
 if len(sys.argv) < 2:
@@ -149,15 +151,16 @@ else:
 
 # Print the season with the maximum sum
 print()
-print("Season with Maximum Precipation:")
+print("Season with Maximum Precipitation:")
 print("Season:", max_season)
 print("Year:", max_season_year)
 print("Value:", max_value)
 print()
 
 # Print the season with the minimum sum
-print("Season with Minimum Precipation:")
+print("Season with Minimum Precipitation:")
 print("Season:", min_season)
 print("Year:", min_season_year)
 print("Value:", min_value)
-
+end=time.time()
+print("elapsed time",end-start)

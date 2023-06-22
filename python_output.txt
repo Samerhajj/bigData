@@ -1,0 +1,31 @@
+Average Yearly Sum: 1475.4214876033059
+Year for Minimum Precipitation: 1989 Precipitation: 1069
+Year for Maximum Percipitation: 1932 Precipitation: 1917
+
+Month: June
+Years with the lowest month Precipitation: [1903 1938 1968 1974 1975 1987 1988 2000 2019]
+
+Month: July
+Years with the lowest month Precipitation: [1903 1908 1929 1948 1953 1984 1987 1994 1996 2003]
+
+Month: August
+Years with the lowest month Precipitation: [1905 1906 1909 1917 1972 1976 1978 1981 1987]
+
+Month: September
+Years with the lowest month Precipitation: [1930 1937 1944 2001]
+
+Month: April
+Years with the highest month Precipitation: [1985]
+
+Drought Years: [1940, 1941, 1942, 1964, 1965, 1966, 1967, 1968, 1975, 1976, 1977, 1992, 1993, 1994, 2016, 2017, 2018]
+
+Season with Maximum Precipitation:
+Season: Winter Sum
+Year: 1962
+Value: 885
+
+Season with Minimum Precipitation:
+Season: Summer Sum
+Year: 1987
+Value: 0
+elapsed time 0.13507533073425293
