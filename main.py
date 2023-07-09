@@ -1,9 +1,17 @@
 import pandas as pd
 import sys
 import time
-
+import psutil
+import os
 start=time.time()
 
+
+# Record CPU Time
+start_cpu_time=time.process_time()
+
+#Record the memory usage
+process=psutil.Process(os.getpid())
+start_memory_info=process.memory_info()
 # Check if the Excel file path is provided as a command-line argument
 if len(sys.argv) < 2:
     print("Please provide the path to the Excel file as a command-line argument.")
@@ -162,5 +170,12 @@ print("Season with Minimum Precipitation:")
 print("Season:", min_season)
 print("Year:", min_season_year)
 print("Value:", min_value)
+
 end=time.time()
-print("elapsed time",end-start)
+end_cpu_time=time.process_time()
+#calculate change in memory info
+end_memory_info=process.memory_info()
+print(f"elapsed time {end-start} seconds")
+print(f"CPU Time spent: {end_cpu_time} seconds")
+print(f"Physical memory(bytes) snapshot : {end_memory_info.rss - start_memory_info.rss}")
+print(f"Virtual memory(bytes) snapshot : {end_memory_info.vms - start_memory_info.vms}")
