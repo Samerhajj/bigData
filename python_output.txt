@@ -28,4 +28,7 @@ Season with Minimum Precipitation:
 Season: Summer Sum
 Year: 1987
 Value: 0
-elapsed time 0.13507533073425293
+elapsed time 0.31925010681152344 seconds
+CPU Time spent: 0.6875 seconds
+Physical memory(bytes) snapshot : 11673600
+Virtual memory(bytes) snapshot : 11149312
